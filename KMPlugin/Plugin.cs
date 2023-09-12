@@ -111,7 +111,7 @@ namespace KMPlugin
             }
 
 
-            if (e.FieldID == triggerFields.CXMark2.ID && String.IsNullOrEmpty(e.NewValue.ToLower().Trim()))
+            if (e.FieldID == triggerFields.CXMark2.ID && !String.IsNullOrEmpty(e.NewValue.ToLower().Trim()))
             {
                 StringBuilder borrowers = new StringBuilder();
 
